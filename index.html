@@ -6,26 +6,26 @@
   <base href="./">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Consultoria Acadêmia, de Imagem e Estilo">
+  <meta name="description" content="Consultoria de Imagem e Estilo">
   <meta name="author" content="Marília Andrade">
   
-  <meta property="og:title" content="Marília Andrade Consultoria" />
+  <meta property="og:title" content="Marília Andrade" />
   <meta property="og:type" content="activity" />
-  <meta property="og:description" content="Consultoria Acadêmia, de Imagem e Estilo" />
+  <meta property="og:description" content="Consultoria de Imagem e Estilo" />
   <meta property="og:image" content="./img/marilia.png" />
   <meta property="og:url" content="http://mariliaandradeconsultoria.com.br" />
   <meta property="og:site_name" content="Marília Andrade Consultoria" />
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Marília Andrade Consultoria" />
-  <meta name="twitter:description" content="Consultoria Acadêmia, de Imagem e Estilo" />
+  <meta name="twitter:title" content="Marília Andrade" />
+  <meta name="twitter:description" content="Consultoria de Imagem e Estilo" />
   <meta name="twitter:image" content="./img/marilia.png" />
   <meta name="twitter:url" content="http://mariliaandradeconsultoria.com.br" />
 
-  <title>Marília Andrade Consultoria - Acadêmica | Imagem | Estilo</title>
+  <title>Marília Andrade - Imagem e Estilo</title>
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="shortcut icon" href="./img/marilia.png" >
+  <link rel="shortcut icon" href="./img/logo.png" >
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -34,15 +34,33 @@
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="./css/landing/agency.min.css">
-  <style>header#header{min-height:60vh;}.servico{padding-top:.5em;padding-bottom:.5em;}.no-full{max-width:70%}</style>
+  <style>
+    header#header{
+      background-color: var(--alternate-color);
+      background-image: url('img/bg.png');
+      background-size: cover;
+      background-position-y: top;
+      margin-top: 100px;
+      height: 45vw;
+    }
+    .servico{padding-top:.5em;padding-bottom:.5em;}.no-full{max-width:70%}
+    .servico h4 {
+      color: var(--link-color);
+    }
+    img#logo {
+      transition: all .3s ease-in;
+    }
+    a.whatsapp em:before { color: #25D366;}
+    a.instagram em:before { color: #E1306C;}
+    </style>
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top mainNav" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" title="Marília Andrade Consultoria" href="#page-top"><img style="max-width:80px" src="./img/marilia-white.png" alt="Marília Andrade" /></a>
+      <a class="navbar-brand js-scroll-trigger" title="Marília Andrade Consultoria" href="#page-top"><img id="logo" style="max-width:160px" src="./img/logo.png" alt="Marília Andrade" /></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -50,16 +68,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Manifesto</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#consulting">Consultoria</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Servi&ccedil;os</a>
-          </li>
-          <!--li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-          </li-->
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Minha Forma&ccedil;&atilde;o</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
@@ -77,7 +92,7 @@
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">
-          <img src="./img/marilia.png" style="max-width:64%;opacity:0;" />
+          <!--img src="img/marilia.png" style="max-width:64%;opacity:0;" -->
         </div>
         <div class="intro-heading" style="display:none;">Imagem é tudo!</div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger hidden" style="display:none" href="#services">Tell Me More</a>
@@ -85,61 +100,57 @@
     </div>
   </header>
 
-  <!-- About -->
+  
+  <!-- Team -->
   <section id="about" class="bg-light">
     <div class="container">
-      <!--div class="row">
+      <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">A Empresa</h2>
-          <h3 class="section-subheading text-muted">A gente é assim.</h3>
+          <h2 class="section-heading text-uppercase mb-4">Sobre Mim</h2>
         </div>
-      </div-->
-      <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-arrow-right fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Miss&atilde;o</h4>
-          <p class="text-muted">
-            Promover o autoconhecimento e aprimorar a imagem pessoal, respeitando a diversidade e colaborando com o crescimento
-            pessoal e profissional.
-          </p>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="img/marilia-p.jpg" style="max-width: 100%;" />
         </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-eye fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Vis&atilde;o</h4>
-          <p class="text-muted">
-            Trabalhar com &eacute;tica, compromisso e excel&ecirc;ncia, buscando sempre o aprimoramento. 
-            Ser refer&ecirc;ncia como profissional de Consultoria Acad&ecirc;mica e de Imagem e Estilo no Piau&iacute;.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-gavel fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Valores</h4>
-          <p class="text-muted">
-              Integridade e Respeito &agrave;s pessoas <br/>
-              Gest&atilde;o Sustent&aacute;vel <br/>
-              Comprometimento <br/>
-              Excel&ecirc;ncia
-          </p>
+        <div class="col" style="display: flex; justify-content: center; align-items: center;">
+          <div class="team-member" style="margin-bottom: 0;">
+            <!--h4>Marília Andrade</h4 -->
+            <p class="text-muted">
+              Ol&aacute;, sou Jornalista, Consultora de Imagem e Estilo e estudante de Moda, Design e Estilismo (UFPI). 
+              Sou formada em Consultoria de Imagem e Estilo pelo SENAC-PI e tenho curso de An&aacute;lise de Colora&ccedil;&atilde;o
+              Pessoal pela Escola de Neg&oacute;cios da Moda (Enmoda - SP);
+            </p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/mariliaandrade">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://instagram.com/mariliaandradeconsultoria">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/whatsapp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  
   <!-- Services -->
-  <section id="services">
+  <section id="consulting" class="bg-pink">
     <div class="container">
       <div class="row mb-3">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Servi&ccedil;os</h2>
+          <h2 class="section-heading text-uppercase">Consultoria de Imagem e Estilo</h2>
           <!-- h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3 -->
         </div>
       </div>
@@ -148,7 +159,7 @@
           <img class="./img-fluid d-block mx-auto rounded-circle no-full" src="./img/portfolio/01.jpg" alt="">
         </div>
         <div class="col-sm-6 col-xs-12">
-          <h4 class="service-heading">Consultoria de Imagem e Estilo</h4>
+          <!--h4 class="service-heading">Consultoria de Imagem e Estilo</h4-->
           <br/>
           <p class="text-muted">
             A imagem visual que você transmite nos primeiros 10 segundos
@@ -166,6 +177,36 @@
             de querer otimizar seu dia a dia na hora da montagem dos
             looks, certamente a consultoria de imagem vai auxiliar você.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Serviços</h2>
+        </div>
+      </div>
+      <div class="row servico text-center servico-1 mb-3">
+        <div class="col-4 mb-8 item">
+          <img class="./img-fluid d-block mx-auto rounded-circle no-full" src="./img/portfolio/01.jpg" alt="">
+          <h4 class="mt-4">title</h4>
+          <p class="text-muted mt-2">text</p>
+        </div>
+        <div class="col-4 mb-8 item">
+          <img class="./img-fluid d-block mx-auto rounded-circle no-full" src="./img/portfolio/01.jpg" alt="">
+          <h4 class="mt-4">title</h4>
+          <p class="text-muted mt-2">text</p>
+        </div>
+        <div class="col-4 mb-8 item">
+          <img class="./img-fluid d-block mx-auto rounded-circle no-full" src="./img/portfolio/01.jpg" alt="">
+          <h4 class="mt-4">title</h4>
+          <p class="text-muted mt-2">text</p>
         </div>
       </div>
       <!-- portfolio -->
@@ -228,20 +269,6 @@
             <h4>Treinamento</h4>
             <p class="text-muted">para Empresas</p>
           </div>
-        </div>
-      </div>
-      <!-- consultoria academica -->
-      <div class="row servico text-center servico-3 mb-4">
-        <div class="col-sm-6 col-xs-12">          
-          <h4 class="service-heading">Consultoria Acad&ecirc;mica</h4>
-          <p class="text-muted">
-            Formatação de TCCs, artigos, trabalhos escolares, <em>abstracts</em> e Norma ABNT <br/>
-            Revisão de Textos para sites e peças publicitárias <br/>
-            Revisão de Currículos
-          </p>
-        </div>
-        <div class="col-sm-6 col-xs-12">
-          <img class="./img-fluid d-block mx-auto rounded-circle no-full" src="./img/portfolio/05.jpg" alt="">
         </div>
       </div>
     </div>
@@ -398,47 +425,6 @@
     </div>
   </section>
 
-  <!-- Team -->
-  <section id="team" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Minha Formação</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="./img/marilia-photo.jpg" alt="">
-            <h4>Marília Andrade</h4>
-            <p class="text-muted">
-              Ol&aacute;, sou Jornalista, Consultora de Imagem e Estilo e estudante de Moda, Design e Estilismo (UFPI). 
-              Sou formada em Consultoria de Imagem e Estilo pelo SENAC-PI e tenho curso de An&aacute;lise de Colora&ccedil;&atilde;o
-              Pessoal pela Escola de Neg&oacute;cios da Moda (Enmoda - SP);
-            </p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/mariliaandrade">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://instagram.com/mariliaandradeconsultoria">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="/whatsapp">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Clients -->
   <section class="py-5" style="display:none">
     <div class="container">
@@ -472,13 +458,27 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Contate</h2>
+          <h2 class="section-heading text-dark text-uppercase">Contate</h2>
           <h3 class="section-subheading text-muted">Fala comigo, eu respondo rápido. ;)</h3>
         </div>
       </div>
       <div class="row">
+        <div class="col text-center">
+          <a class="btn btn-primary whatsapp" href="https://api.whatsapp.com/send?phone=5586988772062">
+            <em class="fab fa-whatsapp"></em> Whatsapp :)
+          </a>
+          <a class="btn btn-primary instagram" href="https://instagram.com/eumariliaandrade">
+            <em class="fab fa-instagram"></em> Venha me ver no insta
+          </a>
+          <br/><br/>
+          <em class="fas fa-envelope"></em> <strong><a style="color: var(--link-color);" href="mailto:contatoconsultoriamarilia@gmail.com">contatoconsultoriamarilia@gmail.com</a></strong>
+          
+      </div>
+      <!-- form -->
+      <div class="row">
+
         <div class="col-lg-12">
-          <form id="contactForm" name="sentMessage" novalidate="novalidate" method="POST" action="https://formspree.io/contato@mariliaandradeconsultoria.com.br">
+          <form style="display: none;" id="contactForm" name="sentMessage" novalidate="novalidate" method="POST" action="https://formspree.io/contato@mariliaandradeconsultoria.com.br">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">

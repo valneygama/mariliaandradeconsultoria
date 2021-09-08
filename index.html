@@ -83,6 +83,14 @@
     .clip-arc {
       clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z');
     }
+    .btn-outline-primary{
+      color: var(--main-color);
+      border-color: var(--main-color);
+    }
+    .btn-outline-primary:focus, .btn-outline-primary:hover{
+      background-color: var(--main-color);
+      border-color: var(--main-color);
+    }
     </style>
 </head>
 
@@ -236,6 +244,7 @@
           <!--<img class="img-fluid d-block mx-auto rounded-circle no-full clip-path1" src="./img/01.jpeg" alt="">-->
           <h4 class="mt-4">CONSULTORIA EXPRESS</h4>
           <p class="text-muted mt-2">Mais rápida, é voltada para uma ocasião, ou situação específica.</p>
+          <!--a class="portfolio-link btn btn-outline-primary" data-toggle="modal" href="#portfolioModal1">Ver mais</a-->
         </div>
         <div class="col-6 col-sm-4 mb-8 item">
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round">
@@ -247,6 +256,7 @@
           <!--<img class="img-fluid d-block mx-auto rounded-circle no-full clip-path2" src="./img/02.jpeg" alt="">-->
           <h4 class="mt-4">CONSULTORIA ESSENCIAL</h4>
           <p class="text-muted mt-2">Análise de estilo e arquitetura corporal</p>
+          <!--a class="portfolio-link btn btn-outline-primary" data-toggle="modal" href="#portfolioModal2">Ver mais</a-->
         </div>
         <div class="col-6 col-sm-4 mb-8 item">
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round">
@@ -258,6 +268,7 @@
           <!--<img class="img-fluid d-block mx-auto rounded-circle no-full clip-path3" src="./img/03.jpeg" alt="">-->
           <h4 class="mt-4">CONSULTORIA MASTER</h4>
           <p class="text-muted mt-2">Consultoria Completa com montagem de looks do seu guarda-roupas dentro do seu estilo</p>
+          <a class="portfolio-link btn btn-outline-primary" data-toggle="modal" href="#portfolioModal3">Ver mais</a>
         </div>
         <div class="col-6 col-sm-4 mb-8 item">
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round">
@@ -269,6 +280,7 @@
           <!--<img class="img-fluid d-block mx-auto rounded-circle no-full clip-path4" src="./img/04.jpeg" alt="">-->
           <h4 class="mt-4">ANÁLISE DE CORES</h4>
           <p class="text-muted mt-2">Identificação das cores e tonalidades específicas que valorizam a pessoa e harmonizam com a pele.</p>
+          <a class="portfolio-link btn btn-outline-primary" data-toggle="modal" href="#portfolioModal4">Ver mais</a>
         </div>
         <div class="col-6 col-sm-4 mb-8 item">
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round">
@@ -280,6 +292,7 @@
           <!--<img class="img-fluid d-block mx-auto rounded-circle no-full clip-path5" src="./img/05.jpeg" alt="">-->
           <h4 class="mt-4">CLOSET INTELIGENTE</h4>
           <p class="text-muted mt-2">O projeto Closet Inteligente é a revitalização, atualização e planejamento do guarda-roupa, analisando peça por peça, para definir o que sai e o que fica.</p>
+          <a class="portfolio-link btn btn-outline-primary" data-toggle="modal" href="#portfolioModal5">Ver mais</a>
         </div>
         <div class="col-6 col-sm-4 mb-8 item">
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round">
@@ -291,6 +304,7 @@
           <!--<img class="img-fluid d-block mx-auto rounded-circle no-full clip-path6" src="./img/06.jpeg" alt="">-->
           <h4 class="mt-4">PERSONAL SHOPPER</h4>
           <p class="text-muted mt-2">Tem como objetivo encontrar as peças certas para compor seus looks.</p>
+          <a class="portfolio-link btn btn-outline-primary" data-toggle="modal" href="#portfolioModal6">Ver mais</a>
         </div>
       </div>
       <!-- portfolio -->
@@ -674,9 +688,9 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Closet Inteligente</h2>
+                <h3 class="text-uppercase">Consultoria Express</h3>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="./img/portfolio/10-full.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="./img/01.jpeg" alt="">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
@@ -685,7 +699,7 @@
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Fechar</button>
               </div>
             </div>
           </div>
@@ -740,18 +754,14 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Organização de Mala</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="./img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
-                </ul>
+                <h2 class="text-uppercase">Consultoria Master</h2>
+                <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="./img/portfolio/03-full.jpg" alt=""-->
+                <p>A imagem visual que você transmite nos primeiros 10 segundos é o suficiente para que outra pessoa tire todas as conclusões sobre você baseada na sua aparência pessoal.</p>
+                <p>O objetivo da Consultoria de Imagem e Estilo é promover o  autoconhecimento, além de fazer com que a imagem fale por você, ou seja, trabalhe a seu favor.</p>
+                <p>Meu objetivo é fazer com que você se conheça, conheça seu estilo e seu corpo. Se você se sente insegura ao se vestir, além de querer otimizar seu dia a dia na hora da montagem dos looks, certamente a consultoria de imagem vai auxiliar você.</p>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+                  <i class="fas fa-times"></i> Fechar</button>
               </div>
             </div>
           </div>
@@ -773,18 +783,15 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Treinamento para Empresas</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="./img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>
+                <h2 class="text-uppercase">Análise de Cores</h2>
+                <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p-->
+                <!--img class="img-fluid d-block mx-auto" src="./img/portfolio/04-full.jpg" alt=""-->
+                <p>Quando a pessoa usa a cor que harmoniza com seu tom de pele, a aparência se torna mais iluminada, saudável, rejuvenescida, do mesmo modo, quando não harmoniza, pode aparentar cansaço, envelhecimento e destacar as imperfeições do rosto.</p>
+                <p>A análise de coloração pessoal é um técnica que traz resultados imediatos. O objetivo é identificar quais cores e tonalidades específicas valorizam a pessoa e harmonizam com a pele.</p>
+                <p>Trabalho com o método Sazonal Expandido, com 12 paletas de coloração e estações. Você receberá sua cartela com sua estação após a análise.</p>
+                
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+                  <i class="fas fa-times"></i> Fechar</button>
               </div>
             </div>
           </div>
@@ -806,18 +813,17 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
+                <h2 class="text-uppercase">Closet Inteligente</h2>
+                <!--
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="./img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
-                </ul>
+                -->
+                <p>O guarda-roupa ideal é aquele que você encontra as peças certas.</p>
+                <p>
+                  O projeto Closet Inteligente é a revitalização, atualização e planejamento do guarda-roupa, analisando peça por peça, para definir o que sai e o que fica.                </p>
+                <p>  Você receberá orientações sobre as coordenações de looks com as peças que têm no closet, podendo consultar posteriormente nas fotos pelo celular.</p>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+                  <i class="fas fa-times"></i> Fechar</button>
               </div>
             </div>
           </div>
@@ -839,18 +845,14 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="./img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>
+                <h2 class="text-uppercase">Personal Shopper</h2>
+                <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="./img/portfolio/06-full.jpg" alt=""-->
+                <p>Tem como objetivo encontrar as peças certas para compor os looks.</p>
+                <p>Direcionado para clientes que já sabem o que precisam no closet, ou que desejam comprar peças para ocasiões especiais como viagem, festa, celebrações, trabalho.</p>
+                <p>  Faço também somente o roteiro de compras se desejar.</p>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+                  <i class="fas fa-times"></i> Fechar</button>
               </div>
             </div>
           </div>
